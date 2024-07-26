@@ -97,8 +97,6 @@ for epoch in range(NUM_EPOCHS):
         save_checkpoint(gen, opt_gen, filename=f"generator_{epoch}.pth.tar")
         save_checkpoint(critic, opt_critic, filename=f"critic_{epoch}.pth.tar")
 
-# Generate and save some synthetic images for future use 
-generate_images(model_path, num_images, output_dir)
 
 # Plot the generator and critic losses
 plot_losses(critic_losses, gen_losses, NUM_EPOCHS, START_EPOCH, SAVE_PATH)
