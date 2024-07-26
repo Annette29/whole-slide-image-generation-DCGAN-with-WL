@@ -3,7 +3,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 import os
 
-from datasets.dataset.py import Dataset
+from preprocess_training_data import Dataset
 from models.generator import Generator
 from models.discriminator import Discriminator
 from models.initialize import initialize_weights
