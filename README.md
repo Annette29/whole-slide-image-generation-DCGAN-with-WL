@@ -55,7 +55,7 @@ Ensure you have the following installed:
    python generate_images.py --model_path path/to/checkpoint.pth.tar --num_images 10 --output_dir generated_images
    ```
 
-## Citation
+#### Citation
 
 If you use this code or find our work helpful, please consider citing this paper:
 
