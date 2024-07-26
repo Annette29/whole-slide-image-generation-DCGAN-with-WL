@@ -11,6 +11,7 @@ from models.gradient_penalty import gradient_penalty
 from utils.visualization import plot_losses
 from utils.checkpoint import save_checkpoint, load_checkpoint
 from utils.training import train_critic, train_generator
+from generate_images import generate_images
 
 # Set device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -95,6 +96,9 @@ for epoch in range(NUM_EPOCHS):
     if SAVE_MODEL and epoch % 600 == 0:
         save_checkpoint(gen, opt_gen, filename=f"generator_{epoch}.pth.tar")
         save_checkpoint(critic, opt_critic, filename=f"critic_{epoch}.pth.tar")
+
+# Generate and save some synthetic images for future use 
+generate_images(model_path, num_images, output_dir)
 
 # Plot the generator and critic losses
 plot_losses(critic_losses, gen_losses, NUM_EPOCHS, START_EPOCH, SAVE_PATH)
