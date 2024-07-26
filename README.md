@@ -1,16 +1,8 @@
 ### WGAN Project for Whole Slide Image Generation in Digital Pathology
 
-This project implements a Deep Convolutional Generative Adversarial Network (DCGAN) with Wasserstein Loss and Gradient Penalty to generate realistic whole slide images (WSIs) in digital pathology. 
+I aimed to train a DCGAN using the Wasserstein loss function with a gradient penalty to generate WSIs of different glomerular structures. 
 
-#### Project Structure
-
-The project is organized into the following directories and files:
-
-- **datasets/**: Contains the `preprocess_training_data.py` file, which handles the dataset preparation and augmentation.
-- **models/**: Includes files defining the Generator (`generator.py`), Discriminator (`discriminator.py`), weight initialization (`initialize.py`), and gradient penalty computation (`gradient_penalty.py`).
-- **utils/**: Consists of utility functions for visualization (`visualization.py`), checkpoint management (`checkpoint.py`), and training (`training.py`).
-- **generate_images.py**: Script to generate images using the trained Generator model.
-- **main.py**: Main script to train the DCGAN model.
+Please note that my GAN generated some clear images, but it did not successfully fit the complex distribution of the training dataset. So please feel free to share any improvements you make to this code :)
 
 #### Getting Started
 
@@ -44,6 +36,7 @@ Ensure you have the following installed:
 1. **Prepare the dataset:**
 
    Please find and download the kidney images dataset used from here: https://data.mendeley.com/datasets/k7nvtgn2x6/3
+
    Organize your training images in a directory, for example, `data/train`.
 
 3. **Train the model:**
@@ -64,11 +57,11 @@ Ensure you have the following installed:
 
 ## Citation
 
-If you use this code or find our work helpful, please consider citing our paper:
+If you use this code or find our work helpful, please consider citing this paper:
 
 ```bibtex
-@inproceedings{11,
-  author = {\underline{Annette Waithira Irungu} and {Kotaro Sonoda} and {Kris Lami} and {Junya Fukuoka} and {Senya Kiyasu}},
+@inproceedings{sice23,
+  author = {{Annette Waithira Irungu} and {Kotaro Sonoda} and {Kris Lami} and {Junya Fukuoka} and {Senya Kiyasu}},
   title = {Leveraging GANs for Whole Slide Image Generation in Digital Pathology},
   booktitle = {the 42nd Society of Instrument and Control Engineers (SICE) Kyushu Branch Conference},
   year = {2023},
