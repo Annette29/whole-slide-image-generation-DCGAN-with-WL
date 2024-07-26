@@ -1,4 +1,4 @@
-### WGAN Project for Whole Slide Image Generation in Digital Pathology
+### DCGAN project for whole slide image generation
 
 I aimed to train a DCGAN using the Wasserstein loss function with a gradient penalty to generate WSIs of different glomerular structures. 
 
@@ -39,20 +39,20 @@ Ensure you have the following installed:
 
    Organize your training images in a directory, for example, `data/train`.
 
-3. **Train the model:**
+2. **Train the model:**
 
-   Run the `main.py` script to start training the WGAN model:
+   Run the `main.py` script to start training the DCGAN model:
 
    ```bash
    python main.py
    ```
 
-4. **Generate images:**
+3. **Generate images:**
 
    Use the `generate_images.py` script to generate new images using the trained model:
 
    ```bash
-   python generate_images.py --model_path path/to/checkpoint.pth.tar --num_images 10 --output_dir generated_images
+   python generate_images.py --model_path path/to/checkpoint.pth.tar --num_images 20 --output_dir generated_images
    ```
 
 #### Citation
