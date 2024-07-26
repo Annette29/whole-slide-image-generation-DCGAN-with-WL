@@ -19,7 +19,7 @@ Ensure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/Annette29/whole_slide_image_generation_DCGAN-with-WL.git
+   git clone https://github.com/Annette29/whole-slide-image-generation-DCGAN-with-WL.git
    cd WGAN_Project
    ```
 
