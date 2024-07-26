@@ -1,6 +1,4 @@
-### DCGAN project for whole slide image generation
-
-I aimed to train a DCGAN using the Wasserstein loss function with a gradient penalty to generate WSIs of different glomerular structures. 
+I wanted to train a DCGAN using the Wasserstein loss function with a gradient penalty to generate WSIs of different glomerular structures. 
 
 Please note that my GAN generated some clear images, but it did not successfully fit the complex distribution of the training dataset. So please feel free to share any improvements you make to this code :)
 
