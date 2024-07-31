@@ -1,6 +1,6 @@
-I wanted to train a DCGAN using the Wasserstein loss function with a gradient penalty to generate WSIs of different glomerular structures. 
+I trained a DCGAN using the Wasserstein loss function with a gradient penalty to generate WSIs of different glomerular structures. 
 
-Please note that my GAN generated some clear images, but it did not successfully fit the complex distribution of the training dataset. So please feel free to share any improvements you make to this code :)
+Please note that the GAN generated some clear images, but it did not successfully fit the complex distribution of the training dataset. So please feel free to share any improvements you make to this code :)
 
 #### Getting Started
 
@@ -61,7 +61,7 @@ If you use this code or find our work helpful, please consider citing this paper
 @inproceedings{sice23,
   author = {{Annette Waithira Irungu} and {Kotaro Sonoda} and {Kris Lami} and {Junya Fukuoka} and {Senya Kiyasu}},
   title = {Leveraging GANs for Whole Slide Image Generation in Digital Pathology},
-  booktitle = {the 42nd Society of Instrument and Control Engineers (SICE) Kyushu Branch Conference},
+  booktitle = {the 42nd Society of Instrument and Control Engineers (SICE) Kyushu Conference},
   address = {Nagasaki, Japan}
   year = {2023},
   month = {dec},
