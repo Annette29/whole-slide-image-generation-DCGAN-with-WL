@@ -62,6 +62,7 @@ If you use this code or find our work helpful, please consider citing this paper
   author = {{Annette Waithira Irungu} and {Kotaro Sonoda} and {Kris Lami} and {Junya Fukuoka} and {Senya Kiyasu}},
   title = {Leveraging GANs for Whole Slide Image Generation in Digital Pathology},
   booktitle = {the 42nd Society of Instrument and Control Engineers (SICE) Kyushu Branch Conference},
+  address = {Nagasaki, Japan}
   year = {2023},
   month = {dec},
   pages = {78–81}
